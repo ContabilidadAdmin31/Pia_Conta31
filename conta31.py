@@ -94,8 +94,105 @@ while respuestaMenu != 13:
 
 
     elif respuestaMenu == 3:
-        print('Seleccciono Prespuesto de Producción ')
+        print('Selecccionó Prespuesto de Producción ')
         print(' ')
+        #Producto D 1 Semestre
+        inventario_final_d_1sem = int(input("Ingresar inventario final del producto D del 1 Semestre: "))
+        total_unidades_d_1sem = (unidades_d + inventario_final_d_1sem)
+        inventario_inicial_d_1sem = int(input("Ingresar inventario inicial del producto D del 1 Semestre: "))
+        unidades_a_producir_d_1sem = (total_unidades_d_1sem - inventario_inicial_d_1sem)
+        print(f"Unidades a producir del producto D del 1er. Semestre: {unidades_a_producir_d_1sem}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #Producto D 2 Semestre
+        inventario_final_d_2sem = int(input("Ingresar inventario final del producto D del 2 Semestre: "))
+        total_unidades_d_2sem = (unidades_d2 + inventario_final_d_2sem)
+        inventario_inicial_d_2sem = inventario_final_d_1sem
+        unidades_a_producir_d_2sem = (total_unidades_d_2sem - inventario_inicial_d_2sem)
+        print(f"Unidades a producir del producto D del 2 Semestre: {unidades_a_producir_d_2sem}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #Totales 2009 Producto D
+        unidades_2009_d = (unidades_d + unidades_d2)
+        inventario_final_2009_d = inventario_final_d_2sem
+        total_unidades_2009_d = (unidades_2009_d + inventario_final_2009_d)
+        inventario_inicial_2009_d = inventario_inicial_d_1sem
+        unidades_a_producir_2009_d = (total_unidades_2009_d - inventario_inicial_2009_d)
+        print("Totales 2009, Producto D\n")
+        print(f"Las unidades a vender son: {unidades_2009_d}\nEl inventario final es: {inventario_final_2009_d}\nEl total de unidades es: {total_unidades_2009_d}\nEl inventario inicial es: {inventario_inicial_2009_d}\nLas unidades a producir son: {unidades_a_producir_2009_d}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+
+        #Producto Di 1 Semestre
+        inventario_final_di_1sem = int(input("Ingresar inventario final del producto Di del 1 Semestre: "))
+        total_unidades_di_1sem = (unidades_di + inventario_final_di_1sem)
+        inventario_inicial_di_1sem = int(input("Ingresar inventario inicial del producto Di del 1 Semestre: "))
+        unidades_a_producir_di_1sem = (total_unidades_di_1sem - inventario_inicial_di_1sem)
+        print(f"Unidades a producir del producto Di del 1er. Semestre: {unidades_a_producir_di_1sem}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #Producto Di 2 Semestre
+        inventario_final_di_2sem = int(input("Ingresar inventario final del producto Di del 2 Semestre: "))
+        total_unidades_di_2sem = (unidades_di2 + inventario_final_di_2sem)
+        inventario_inicial_di_2sem = inventario_final_di_1sem
+        unidades_a_producir_di_2sem = (total_unidades_di_2sem - inventario_inicial_di_2sem)
+        print(f"Unidades a producir del producto Di del 2 Semestre: {unidades_a_producir_di_2sem}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #Totales 2009 Producto Di
+        unidades_2009_di = (unidades_di + unidades_di2)
+        inventario_final_2009_di = inventario_final_di_2sem
+        total_unidades_2009_di = (unidades_2009_di + inventario_final_2009_di)
+        inventario_inicial_2009_di = inventario_inicial_di_1sem
+        unidades_a_producir_2009_di = (total_unidades_2009_di - inventario_inicial_2009_di)
+        print("Totales 2009, Producto Di\n")
+        print(f"Las unidades a vender son: {unidades_2009_di}\nEl inventario final es: {inventario_final_2009_di}\nEl total de unidades es: {total_unidades_2009_di}\nEl inventario inicial es: {inventario_inicial_2009_di}\nLas unidades a producir son: {unidades_a_producir_2009_di}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+
+        #Producto Z 1 Semestre
+        inventario_final_z_1sem = int(input("Ingresar inventario final del producto Z del 1 Semestre: "))
+        total_unidades_z_1sem = (unidades_z + inventario_final_z_1sem)
+        inventario_inicial_z_1sem = int(input("Ingresar inventario inicial del producto Z del 1 Semestre: "))
+        unidades_a_producir_z_1sem = (total_unidades_z_1sem - inventario_inicial_z_1sem)
+        print(f"Unidades a producir del producto Z del 1er. Semestre: {unidades_a_producir_z_1sem}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #Producto Z 2 Semestre
+        inventario_final_z_2sem = int(input("Ingresar inventario final del producto Z del 2 Semestre: "))
+        total_unidades_z_2sem = (unidades_z2 + inventario_final_z_2sem)
+        inventario_inicial_z_2sem = inventario_final_z_1sem
+        unidades_a_producir_z_2sem = (total_unidades_z_2sem - inventario_inicial_z_2sem)
+        print(f"Unidades a producir del producto Z del 2 Semestre: {unidades_a_producir_z_2sem}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #Totales 2009 Producto Z
+        unidades_2009_z = (unidades_z + unidades_z2)
+        inventario_final_2009_z = inventario_final_z_2sem
+        total_unidades_2009_z = (unidades_2009_z + inventario_final_2009_z)
+        inventario_inicial_2009_z = inventario_inicial_z_1sem
+        unidades_a_producir_2009_z = (total_unidades_2009_z - inventario_inicial_2009_z)
+        print("Totales 2009, Producto Z\n")
+        print(f"Las unidades a vender son: {unidades_2009_z}\nEl inventario final es: {inventario_final_2009_z}\nEl total de unidades es: {total_unidades_2009_z}\nEl inventario inicial es: {inventario_inicial_2009_z}\nLas unidades a producir son: {unidades_a_producir_2009_z}")
+
+        input("Presione enter para continuar...")
+        borrar()
 
     elif respuestaMenu == 4:
         print('Seleccciono Presupuesto de Requerimento de Materiales ')
