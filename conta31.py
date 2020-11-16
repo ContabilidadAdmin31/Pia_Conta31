@@ -1,3 +1,4 @@
+totald_2009=[]
 respuestaMenu = 0
 
 print('Bienvenido al Programa de Presupuesto Maestro')
@@ -20,7 +21,19 @@ while respuestaMenu != 13:
     print(' ')
     if respuestaMenu == 1:
         print('Seleccciono Presupuesto de Ventas')
-        print(' ')
+         #ProductoD
+        unidades_d=int(input('Ingresa las unidades a vender del producto D en el primer semestre: '))
+        preciov_d=int(input("Ingresa el precio venta de las unidades del primer semestre: "))
+        importe1sem= unidades_d*preciov_d
+        print(f"El importe de venta del primer semestre es de: {importe1sem}")
+        totald_2009.append(importe1sem)
+        unidades_d2=int(input('Ingresa las unidades a vender del producto D en el segundo semestre: '))
+        preciov_d2=int(input("Ingresa el precio venta de las unidades del segundo semestre: "))
+        importe2sem= unidades_d2*preciov_d2
+        print(f"El importe de venta del segundo semestre es de: {importe2sem}")
+        totald_2009.append(importe2sem)
+        total=sum(totald_2009)
+        print(f"El importe total del 2009 es de {total}")
 
     elif respuestaMenu == 2:
         print('Seleccciono la Determinación del saldo de Clientes y Flujo de Entradas ')
