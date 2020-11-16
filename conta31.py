@@ -16,6 +16,7 @@ print('11. Valuación de Inventarios Finales')
 print('12. Presupuesto Financiero')
 print('13. Salir')
 print(' ')
+
 while respuestaMenu != 13:
     respuestaMenu = int(input('Seleccione una opcion del MENU: '))
     print(' ')
@@ -24,16 +25,42 @@ while respuestaMenu != 13:
          #ProductoD
         unidades_d=int(input('Ingresa las unidades a vender del producto D en el primer semestre: '))
         preciov_d=int(input("Ingresa el precio venta de las unidades del primer semestre: "))
-        importe1sem= unidades_d*preciov_d
-        print(f"El importe de venta del primer semestre es de: {importe1sem}")
-        totald_2009.append(importe1sem)
+        importe1sem_d= unidades_d*preciov_d
+        print(f"\nEl importe de venta del primer semestre es de: {importe1sem_d}")
         unidades_d2=int(input('Ingresa las unidades a vender del producto D en el segundo semestre: '))
         preciov_d2=int(input("Ingresa el precio venta de las unidades del segundo semestre: "))
-        importe2sem= unidades_d2*preciov_d2
-        print(f"El importe de venta del segundo semestre es de: {importe2sem}")
-        totald_2009.append(importe2sem)
-        total=sum(totald_2009)
-        print(f"El importe total del 2009 del producto D es de {total}")
+        importe2sem_d= unidades_d2*preciov_d2
+        print(f"\nEl importe de venta del segundo semestre es de: {importe2sem_d}")
+        total_prod_d = (importe1sem_d + importe2sem_d)
+        print(f"\nEl importe total del 2009 del producto D es de {total_prod_d}")
+
+        #Producto Di
+        unidades_di=int(input('Ingresa las unidades a vender del producto Di en el primer semestre: '))
+        preciov_di=int(input("Ingresa el precio venta de las unidades del primer semestre: "))
+        importe1sem_di= unidades_di*preciov_di
+        print(f"\nEl importe de venta del primer semestre es de: {importe1sem_di}")
+        unidades_di2=int(input('Ingresa las unidades a vender del producto Di en el segundo semestre: '))
+        preciov_di2=int(input("Ingresa el precio venta de las unidades del segundo semestre: "))
+        importe2sem_di= unidades_di2*preciov_di2
+        print(f"\nEl importe de venta del segundo semestre es de: {importe2sem_di}")
+        total_prod_di = (importe1sem_di + importe2sem_di)
+        print(f"\nEl importe total del 2009 del producto Di es de {total_prod_di}")
+
+        #Producto Z
+        unidades_z=int(input('Ingresa las unidades a vender del producto Z en el primer semestre: '))
+        preciov_z=int(input("Ingresa el precio venta de las unidades del primer semestre: "))
+        importe1sem_z= unidades_z*preciov_z
+        print(f"\nEl importe de venta del primer semestre es de: {importe1sem_z}")
+        unidades_z2=int(input('Ingresa las unidades a vender del producto Z en el segundo semestre: '))
+        preciov_z2=int(input("Ingresa el precio venta de las unidades del segundo semestre: "))
+        importe2sem_z= unidades_z2*preciov_z2
+        print(f"\nEl importe de venta del segundo semestre es de: {importe2sem_z}")
+        total_prod_z = (importe1sem_z + importe2sem_z)
+        print(f"\nEl importe total del 2009 del producto Z es de {total_prod_z}")
+
+        #Total 2009 3 productos
+        total_3productos = (total_prod_d + total_prod_di + total_prod_z)
+        print(f"\nEl total del 2009 por los 3 productos es de {total_3productos}")
 
     elif respuestaMenu == 2:
         print('Seleccciono la Determinación del saldo de Clientes y Flujo de Entradas ')
