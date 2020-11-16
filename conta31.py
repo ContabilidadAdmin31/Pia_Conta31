@@ -380,8 +380,153 @@ while respuestaMenu != 13:
         borrar()
         
     elif respuestaMenu == 5:
-        print('Seleccciono Presupuesto de Compra de Materiales')
+        print('Selecccionó Presupuesto de Compra de Materiales\n')
         print(' ')
+        #material a 1 semestre
+        print("Material A, 1 semestre")
+        req_mat_a_1 = total_req_a_1sem
+        inv_final_a_1 = int(input("Ingrese inventario final: "))
+        total_materiales_a_1 = (req_mat_a_1 + inv_final_a_1)
+        print(f"El total de materiales es de {total_materiales_a_1}")
+        inv_inicial_a_1 = int(input("Ingrese inventario inicial: "))
+        material_comprar_a_1 = (total_materiales_a_1 - inv_inicial_a_1)
+        precio_compra_a_1 = int(input("Ingrese precio de compra: "))
+        total_material_a_1_pesos = (material_comprar_a_1 * precio_compra_a_1)
+        print(f"El Total de material A del semestre 1 en $ es: ${total_material_a_1_pesos}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #material a 2 semestre
+        print("Material A, 2 semestre")
+        req_mat_a_2 = total_req_a_2sem
+        inv_final_a_2 = int(input("Ingrese inventario final: "))
+        total_materiales_a_2 = (req_mat_a_2 + inv_final_a_2)
+        print(f"El total de materiales es de {total_materiales_a_2}")
+        inv_inicial_a_2 = int(input("Ingrese inventario inicial: "))
+        material_comprar_a_2 = (total_materiales_a_2 - inv_inicial_a_2)
+        precio_compra_a_2 = int(input("Ingrese precio de compra: "))
+        total_material_a_2_pesos = (material_comprar_a_2 * precio_compra_a_2)
+        print(f"El Total de material A del semestre 2 en $ es: ${total_material_a_2_pesos}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+
+        #material a total 2009
+        print("Material A, Total 2009")
+        req_mat_a_2009 = total_req_a_2009
+        inv_final_a_2009 = int(input("Ingrese inventario final: "))
+        total_materiales_a_2009 = (req_mat_a_2009 + inv_final_a_2009)
+        print(f"El total de materiales es de {total_materiales_a_2009}")
+        inv_inicial_a_2009 = int(input("Ingrese inventario inicial: "))
+        material_comprar_a_2009 = (total_materiales_a_2009 - inv_inicial_a_2009)
+        precio_compra_a_2009 = int(input("Ingrese precio de compra: "))
+        total_material_a_2009_pesos = (total_material_a_1_pesos + total_material_a_2_pesos)
+        print(f"El Total de material A del 2009 en $ es: ${total_material_a_2009_pesos}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #material b 1 semestre
+        print("Material B, 1 semestre")
+        req_mat_b_1 = total_req_b_1sem
+        inv_final_b_1 = int(input("Ingrese inventario final: "))
+        total_materiales_b_1 = (req_mat_b_1 + inv_final_b_1)
+        print(f"El total de materiales es de {total_materiales_b_1}")
+        inv_inicial_b_1 = int(input("Ingrese inventario inicial: "))
+        material_comprar_b_1 = (total_materiales_b_1 - inv_inicial_b_1)
+        precio_compra_b_1 = int(input("Ingrese precio de compra: "))
+        total_material_b_1_pesos = (material_comprar_b_1 * precio_compra_b_1)
+        print(f"El Total de material B del semestre 1 en $ es: ${total_material_b_1_pesos}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #material b 2 semestre
+        print("Material B, 2 semestre")
+        req_mat_b_2 = total_req_b_2sem
+        inv_final_b_2 = int(input("Ingrese inventario final: "))
+        total_materiales_b_2 = (req_mat_b_2 + inv_final_b_2)
+        print(f"El total de materiales es de {total_materiales_b_2}")
+        inv_inicial_b_2 = int(input("Ingrese inventario inicial: "))
+        material_comprar_b_2 = (total_materiales_b_2 - inv_inicial_b_2)
+        precio_compra_b_2 = int(input("Ingrese precio de compra: "))
+        total_material_b_2_pesos = (material_comprar_b_2 * precio_compra_b_2)
+        print(f"El Total de material B del semestre 2 en $ es: ${total_material_b_2_pesos}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #material b total 2009
+        print("Material A, Total 2009")
+        req_mat_b_2009 = total_req_b_2009
+        inv_final_b_2009 = int(input("Ingrese inventario final: "))
+        total_materiales_b_2009 = (req_mat_b_2009 + inv_final_b_2009)
+        print(f"El total de materiales es de {total_materiales_b_2009}")
+        inv_inicial_b_2009 = int(input("Ingrese inventario inicial: "))
+        material_comprar_b_2009 = (total_materiales_b_2009 - inv_inicial_b_2009)
+        precio_compra_b_2009 = int(input("Ingrese precio de compra: "))
+        total_material_b_2009_pesos = (total_material_b_1_pesos + total_material_b_2_pesos)
+        print(f"El Total de material B del 2009 en $ es: ${total_material_b_2009_pesos}")
+    
+        input("Presione enter para continuar...")
+        borrar()
+
+        #material c 1 semestre
+        print("Material C, 1 semestre")
+        req_mat_c_1 = total_req_c_1sem
+        inv_final_c_1 = int(input("Ingrese inventario final: "))
+        total_materiales_c_1 = (req_mat_c_1 + inv_final_c_1)
+        print(f"El total de materiales es de {total_materiales_c_1}")
+        inv_inicial_c_1 = int(input("Ingrese inventario inicial: "))
+        material_comprar_c_1 = (total_materiales_c_1 - inv_inicial_c_1)
+        precio_compra_c_1 = int(input("Ingrese precio de compra: "))
+        total_material_c_1_pesos = (material_comprar_c_1 * precio_compra_c_1)
+        print(f"El Total de material C del semestre 1 en $ es: ${total_material_c_1_pesos}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #material c 2 semestre
+        print("Material C, 2 semestre")
+        req_mat_c_2 = total_req_c_2sem
+        inv_final_c_2 = int(input("Ingrese inventario final: "))
+        total_materiales_c_2 = (req_mat_c_2 + inv_final_c_2)
+        print(f"El total de materiales es de {total_materiales_c_2}")
+        inv_inicial_c_2 = int(input("Ingrese inventario inicial: "))
+        material_comprar_c_2 = (total_materiales_c_2 - inv_inicial_c_2)
+        precio_compra_c_2 = int(input("Ingrese precio de compra: "))
+        total_material_c_2_pesos = (material_comprar_c_2 * precio_compra_c_2)
+        print(f"El Total de material C del semestre 2 en $ es: ${total_material_c_2_pesos}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #material c total 2009
+        print("Material C, Total 2009")
+        req_mat_c_2009 = total_req_c_2009
+        inv_final_c_2009 = int(input("Ingrese inventario final: "))
+        total_materiales_c_2009 = (req_mat_c_2009 + inv_final_c_2009)
+        print(f"El total de materiales es de {total_materiales_c_2009}")
+        inv_inicial_c_2009 = int(input("Ingrese inventario inicial: "))
+        material_comprar_c_2009 = (total_materiales_c_2009 - inv_inicial_c_2009)
+        precio_compra_c_2009 = int(input("Ingrese precio de compra: "))
+        total_material_c_2009_pesos = (total_material_c_1_pesos + total_material_c_2_pesos)
+        print(f"El Total de material C del 2009 en $ es: ${total_material_c_2009_pesos}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #COMPRAS TOTALES
+        compra_total_1 = (total_material_a_1_pesos + total_material_b_1_pesos + total_material_c_1_pesos)
+        compra_total_2 = (total_material_a_2_pesos + total_material_b_2_pesos + total_material_c_2_pesos)
+        compra_total_2009 = (total_material_a_2009_pesos + total_material_b_2009_pesos + total_material_c_2009_pesos)
+        print("COMPRAS TOTALES")
+        print(f"1. Semestre: {compra_total_1}\n2. Semestre: {compra_total_2}\nTotal 2009: {compra_total_2009}")
+
+        input("Presione enter para continuar...")
+        borrar()
 
 
     elif respuestaMenu == 6:
