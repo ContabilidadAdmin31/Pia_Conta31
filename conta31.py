@@ -32,12 +32,12 @@ while respuestaMenu != 13:
     if respuestaMenu == 1:
         print('Selecccionó Presupuesto de Ventas')
          #ProductoD
-        unidades_d=int(input('Ingresa las unidades a vender del producto D en el primer semestre: '))
-        preciov_d=int(input("Ingresa el precio venta de las unidades del primer semestre: "))
+        unidades_d=float(input('Ingresa las unidades a vender del producto D en el primer semestre: '))
+        preciov_d=float(input("Ingresa el precio venta de las unidades del primer semestre: "))
         importe1sem_d= unidades_d*preciov_d
         print(f"\nEl importe de venta del primer semestre es de: {importe1sem_d}")
-        unidades_d2=int(input('Ingresa las unidades a vender del producto D en el segundo semestre: '))
-        preciov_d2=int(input("Ingresa el precio venta de las unidades del segundo semestre: "))
+        unidades_d2=float(input('Ingresa las unidades a vender del producto D en el segundo semestre: '))
+        preciov_d2=float(input("Ingresa el precio venta de las unidades del segundo semestre: "))
         importe2sem_d= unidades_d2*preciov_d2
         print(f"\nEl importe de venta del segundo semestre es de: {importe2sem_d}")
         total_prod_d = (importe1sem_d + importe2sem_d)
@@ -47,12 +47,12 @@ while respuestaMenu != 13:
         borrar()
 
         #Producto Di
-        unidades_di=int(input('Ingresa las unidades a vender del producto Di en el primer semestre: '))
-        preciov_di=int(input("Ingresa el precio venta de las unidades del primer semestre: "))
+        unidades_di=float(input('Ingresa las unidades a vender del producto Di en el primer semestre: '))
+        preciov_di=float(input("Ingresa el precio venta de las unidades del primer semestre: "))
         importe1sem_di= unidades_di*preciov_di
         print(f"\nEl importe de venta del primer semestre es de: {importe1sem_di}")
-        unidades_di2=int(input('Ingresa las unidades a vender del producto Di en el segundo semestre: '))
-        preciov_di2=int(input("Ingresa el precio venta de las unidades del segundo semestre: "))
+        unidades_di2=float(input('Ingresa las unidades a vender del producto Di en el segundo semestre: '))
+        preciov_di2=float(input("Ingresa el precio venta de las unidades del segundo semestre: "))
         importe2sem_di= unidades_di2*preciov_di2
         print(f"\nEl importe de venta del segundo semestre es de: {importe2sem_di}")
         total_prod_di = (importe1sem_di + importe2sem_di)
@@ -62,12 +62,12 @@ while respuestaMenu != 13:
         borrar()
 
         #Producto Z
-        unidades_z=int(input('Ingresa las unidades a vender del producto Z en el primer semestre: '))
-        preciov_z=int(input("Ingresa el precio venta de las unidades del primer semestre: "))
+        unidades_z=float(input('Ingresa las unidades a vender del producto Z en el primer semestre: '))
+        preciov_z=float(input("Ingresa el precio venta de las unidades del primer semestre: "))
         importe1sem_z= unidades_z*preciov_z
         print(f"\nEl importe de venta del primer semestre es de: {importe1sem_z}")
-        unidades_z2=int(input('Ingresa las unidades a vender del producto Z en el segundo semestre: '))
-        preciov_z2=int(input("Ingresa el precio venta de las unidades del segundo semestre: "))
+        unidades_z2=float(input('Ingresa las unidades a vender del producto Z en el segundo semestre: '))
+        preciov_z2=float(input("Ingresa el precio venta de las unidades del segundo semestre: "))
         importe2sem_z= unidades_z2*preciov_z2
         print(f"\nEl importe de venta del segundo semestre es de: {importe2sem_z}")
         total_prod_z = (importe1sem_z + importe2sem_z)
@@ -86,12 +86,12 @@ while respuestaMenu != 13:
     elif respuestaMenu == 2:
         print('Selecccionó la Determinación del saldo de Clientes y Flujo de Entradas ')
         print(' ')
-        saldo_clientes_2008 = int(input("\nIngrese el saldo de clientes al 31 de Diciembre de 2008: "))
+        saldo_clientes_2008 = float(input("\nIngrese el saldo de clientes al 31 de Diciembre de 2008: "))
         total_clientes_2009 = (saldo_clientes_2008 + ventas_2009)
         print(f"\nTotal de clientes 2009: {total_clientes_2009}")
 
         print("\n Entradas de efectivo")
-        por_cobranza_2008 = int(input("\nIngrese cobranza del 2008: "))
+        por_cobranza_2008 = float(input("\nIngrese cobranza del 2008: "))
         por_cobranza_2009 = (ventas_2009 * 0.9)
         total_entradas_2009 = (por_cobranza_2008 + por_cobranza_2009)
 
@@ -106,9 +106,9 @@ while respuestaMenu != 13:
         print('Selecccionó Prespuesto de Producción ')
         print(' ')
         #Producto D 1 Semestre
-        inventario_final_d_1sem = int(input("Ingresar inventario final del producto D del 1 Semestre: "))
+        inventario_final_d_1sem = float(input("Ingresar inventario final del producto D del 1 Semestre: "))
         total_unidades_d_1sem = (unidades_d + inventario_final_d_1sem)
-        inventario_inicial_d_1sem = int(input("Ingresar inventario inicial del producto D del 1 Semestre: "))
+        inventario_inicial_d_1sem = float(input("Ingresar inventario inicial del producto D del 1 Semestre: "))
         unidades_a_producir_d_1sem = (total_unidades_d_1sem - inventario_inicial_d_1sem)
         print(f"Unidades a producir del producto D del 1er. Semestre: {unidades_a_producir_d_1sem}")
 
@@ -116,7 +116,7 @@ while respuestaMenu != 13:
         borrar()
 
         #Producto D 2 Semestre
-        inventario_final_d_2sem = int(input("Ingresar inventario final del producto D del 2 Semestre: "))
+        inventario_final_d_2sem = float(input("Ingresar inventario final del producto D del 2 Semestre: "))
         total_unidades_d_2sem = (unidades_d2 + inventario_final_d_2sem)
         inventario_inicial_d_2sem = inventario_final_d_1sem
         unidades_a_producir_d_2sem = (total_unidades_d_2sem - inventario_inicial_d_2sem)
@@ -139,9 +139,9 @@ while respuestaMenu != 13:
 
 
         #Producto Di 1 Semestre
-        inventario_final_di_1sem = int(input("Ingresar inventario final del producto Di del 1 Semestre: "))
+        inventario_final_di_1sem = float(input("Ingresar inventario final del producto Di del 1 Semestre: "))
         total_unidades_di_1sem = (unidades_di + inventario_final_di_1sem)
-        inventario_inicial_di_1sem = int(input("Ingresar inventario inicial del producto Di del 1 Semestre: "))
+        inventario_inicial_di_1sem = float(input("Ingresar inventario inicial del producto Di del 1 Semestre: "))
         unidades_a_producir_di_1sem = (total_unidades_di_1sem - inventario_inicial_di_1sem)
         print(f"Unidades a producir del producto Di del 1er. Semestre: {unidades_a_producir_di_1sem}")
 
@@ -149,7 +149,7 @@ while respuestaMenu != 13:
         borrar()
 
         #Producto Di 2 Semestre
-        inventario_final_di_2sem = int(input("Ingresar inventario final del producto Di del 2 Semestre: "))
+        inventario_final_di_2sem = float(input("Ingresar inventario final del producto Di del 2 Semestre: "))
         total_unidades_di_2sem = (unidades_di2 + inventario_final_di_2sem)
         inventario_inicial_di_2sem = inventario_final_di_1sem
         unidades_a_producir_di_2sem = (total_unidades_di_2sem - inventario_inicial_di_2sem)
@@ -172,9 +172,9 @@ while respuestaMenu != 13:
 
 
         #Producto Z 1 Semestre
-        inventario_final_z_1sem = int(input("Ingresar inventario final del producto Z del 1 Semestre: "))
+        inventario_final_z_1sem = float(input("Ingresar inventario final del producto Z del 1 Semestre: "))
         total_unidades_z_1sem = (unidades_z + inventario_final_z_1sem)
-        inventario_inicial_z_1sem = int(input("Ingresar inventario inicial del producto Z del 1 Semestre: "))
+        inventario_inicial_z_1sem = float(input("Ingresar inventario inicial del producto Z del 1 Semestre: "))
         unidades_a_producir_z_1sem = (total_unidades_z_1sem - inventario_inicial_z_1sem)
         print(f"Unidades a producir del producto Z del 1er. Semestre: {unidades_a_producir_z_1sem}")
 
@@ -182,7 +182,7 @@ while respuestaMenu != 13:
         borrar()
 
         #Producto Z 2 Semestre
-        inventario_final_z_2sem = int(input("Ingresar inventario final del producto Z del 2 Semestre: "))
+        inventario_final_z_2sem = float(input("Ingresar inventario final del producto Z del 2 Semestre: "))
         total_unidades_z_2sem = (unidades_z2 + inventario_final_z_2sem)
         inventario_inicial_z_2sem = inventario_final_z_1sem
         unidades_a_producir_z_2sem = (total_unidades_z_2sem - inventario_inicial_z_2sem)
@@ -210,8 +210,8 @@ while respuestaMenu != 13:
         totalunidadesd= unidadesd+unidadesd2
         #Material A Producto D
         print("PRODUCTO D\n")
-        mad=int(input("Ingrese el requerimiento de material A del primer semestre: "))
-        mad2=int(input("ingrese el requerimiento de material A del segundo semestre: "))
+        mad=float(input("Ingrese el requerimiento de material A del primer semestre: "))
+        mad2=float(input("ingrese el requerimiento de material A del segundo semestre: "))
         totalma1=  unidadesd*mad
         print(f"El material A requerido del primer semestre del producto D es de: {totalma1}")
         totalma2= unidadesd2*mad2
@@ -222,8 +222,8 @@ while respuestaMenu != 13:
         
         #Material B Producto D
         print("PRODUCTO D\n")
-        mbd=int(input("Ingrese el requerimiento de material B del primer semestre: "))
-        mbd2=int(input("Ingrese el requerimiento de material B del segundo semestre: "))
+        mbd=float(input("Ingrese el requerimiento de material B del primer semestre: "))
+        mbd2=float(input("Ingrese el requerimiento de material B del segundo semestre: "))
         totalmb1=  unidadesd*mbd
         print(f"El material B requerido del primer semestre del producto D es de: {totalmb1}")
         totalmb2= unidadesd2*mbd2
@@ -234,8 +234,8 @@ while respuestaMenu != 13:
         
         #Material C Producto D
         print("PRODUCTO D\n")
-        mcd=int(input("Ingrese el requerimiento de material C del primer semestre: "))
-        mcd2=int(input("Ingrese el requerimiento de material C del segundo semestre: "))
+        mcd=float(input("Ingrese el requerimiento de material C del primer semestre: "))
+        mcd2=float(input("Ingrese el requerimiento de material C del segundo semestre: "))
         totalmc1=  unidadesd*mcd
         print(f"El material C requerido del primer semestre del producto D es de: {totalmc1}")
         totalmc2= unidadesd2*mcd2
@@ -261,8 +261,8 @@ while respuestaMenu != 13:
         totalunidadesdi= unidadesdi+unidadesdi2
         #Material A Producto Di
         print("PRODUCTO Di\n")
-        madi=int(input("Ingrese el requerimiento de material A del primer semestre: "))
-        madi2=int(input("Ingrese el requerimiento de material A del segundo semestre: "))
+        madi=float(input("Ingrese el requerimiento de material A del primer semestre: "))
+        madi2=float(input("Ingrese el requerimiento de material A del segundo semestre: "))
         totalma1di=  unidadesdi*madi
         print(f"El material A requerido del primer semestre del producto Di es de: {totalma1di}")
         totalma2di= unidadesdi2*madi2
@@ -273,8 +273,8 @@ while respuestaMenu != 13:
         
         #Material B Producto Di
         print("PRODUCTO Di\n")
-        mbdi=int(input("Ingrese el requerimiento de material B del primer semestre: "))
-        mbdi2=int(input("Ingrese el requerimiento de material B del segundo semestre: "))
+        mbdi=float(input("Ingrese el requerimiento de material B del primer semestre: "))
+        mbdi2=float(input("Ingrese el requerimiento de material B del segundo semestre: "))
         totalmb1di=  unidadesdi*mbdi
         print(f"El material B requerido del primer semestre del producto Di es de: {totalmb1di}")
         totalmb2di= unidadesdi2*mbdi2
@@ -285,8 +285,8 @@ while respuestaMenu != 13:
         
         #Material C Producto Di
         print("PRODUCTO Di\n")
-        mcdi=int(input("Ingrese el requerimiento de material C del primer semestre: "))
-        mcdi2=int(input("Ingrese el requerimiento de material C del segundo semestre: "))
+        mcdi=float(input("Ingrese el requerimiento de material C del primer semestre: "))
+        mcdi2=float(input("Ingrese el requerimiento de material C del segundo semestre: "))
         totalmc1di=  unidadesdi*mcdi
         print(f"El material C requerido del primer semestre del producto Di es de: {totalmc1di}")
         totalmc2di= unidadesdi2*mcdi2
@@ -312,8 +312,8 @@ while respuestaMenu != 13:
         totalunidadesz= unidadesz+unidadesz2
         #Material A Producto Z
         print("PRODUCTO Z\n")
-        maz=int(input("Ingrese el requerimiento de material A del primer semestre: "))
-        maz2=int(input("ingrese el requerimiento de material A del segundo semestre: "))
+        maz=float(input("Ingrese el requerimiento de material A del primer semestre: "))
+        maz2=float(input("ingrese el requerimiento de material A del segundo semestre: "))
         totalma1z=  unidadesz*maz
         print(f"El material A requerido del primer semestre del producto Z es de: {totalma1z}")
         totalma2z= unidadesz2*maz2
@@ -324,8 +324,8 @@ while respuestaMenu != 13:
         
         #Material B Producto Z
         print("PRODUCTO Z\n")
-        mbz=int(input("Ingrese el requerimiento de material B del primer semestre: "))
-        mbz2=int(input("Ingrese el requerimiento de material B del segundo semestre: "))
+        mbz=float(input("Ingrese el requerimiento de material B del primer semestre: "))
+        mbz2=float(input("Ingrese el requerimiento de material B del segundo semestre: "))
         totalmb1z=  unidadesz*mbz
         print(f"El material B requerido del primer semestre del producto Z es de: {totalmb1z}")
         totalmb2z= unidadesz2*mbz2
@@ -336,8 +336,8 @@ while respuestaMenu != 13:
         
         #Material C Producto Z
         print("PRODUCTO Z\n")
-        mcz=int(input("ingrese el requerimiento de material C del primer semestre: "))
-        mcz2=int(input("ingrese el requerimiento de material C del segundo semestre: "))
+        mcz=float(input("ingrese el requerimiento de material C del primer semestre: "))
+        mcz2=float(input("ingrese el requerimiento de material C del segundo semestre: "))
         totalmc1z=  unidadesz*mcz
         print(f"El material C requerido del primer semestre del producto Z es de: {totalmc1z}")
         totalmc2z= unidadesz2*mcz2
@@ -385,10 +385,10 @@ while respuestaMenu != 13:
         #material a 1 semestre
         print("Material A, 1 semestre")
         req_mat_a_1 = total_req_a_1sem
-        inv_final_a_1 = int(input("Ingrese inventario final: "))
+        inv_final_a_1 = float(input("Ingrese inventario final: "))
         total_materiales_a_1 = (req_mat_a_1 + inv_final_a_1)
         print(f"El total de materiales es de {total_materiales_a_1}")
-        inv_inicial_a_1 = int(input("Ingrese inventario inicial: "))
+        inv_inicial_a_1 = float(input("Ingrese inventario inicial: "))
         material_comprar_a_1 = (total_materiales_a_1 - inv_inicial_a_1)
         precio_compra_a_1 = float(input("Ingrese precio de compra: "))
         total_material_a_1_pesos = (material_comprar_a_1 * precio_compra_a_1)
@@ -400,10 +400,10 @@ while respuestaMenu != 13:
         #material a 2 semestre
         print("Material A, 2 semestre")
         req_mat_a_2 = total_req_a_2sem
-        inv_final_a_2 = int(input("Ingrese inventario final: "))
+        inv_final_a_2 = float(input("Ingrese inventario final: "))
         total_materiales_a_2 = (req_mat_a_2 + inv_final_a_2)
         print(f"El total de materiales es de {total_materiales_a_2}")
-        inv_inicial_a_2 = int(input("Ingrese inventario inicial: "))
+        inv_inicial_a_2 = float(input("Ingrese inventario inicial: "))
         material_comprar_a_2 = (total_materiales_a_2 - inv_inicial_a_2)
         precio_compra_a_2 = float(input("Ingrese precio de compra: "))
         total_material_a_2_pesos = (material_comprar_a_2 * precio_compra_a_2)
@@ -416,10 +416,10 @@ while respuestaMenu != 13:
         #material a total 2009
         print("Material A, Total 2009")
         req_mat_a_2009 = total_req_a_2009
-        inv_final_a_2009 = int(input("Ingrese inventario final: "))
+        inv_final_a_2009 = float(input("Ingrese inventario final: "))
         total_materiales_a_2009 = (req_mat_a_2009 + inv_final_a_2009)
         print(f"El total de materiales es de {total_materiales_a_2009}")
-        inv_inicial_a_2009 = int(input("Ingrese inventario inicial: "))
+        inv_inicial_a_2009 = float(input("Ingrese inventario inicial: "))
         material_comprar_a_2009 = (total_materiales_a_2009 - inv_inicial_a_2009)
         total_material_a_2009_pesos = (total_material_a_1_pesos + total_material_a_2_pesos)
         print(f"El Total de material A del 2009 en $ es: ${total_material_a_2009_pesos}")
@@ -430,10 +430,10 @@ while respuestaMenu != 13:
         #material b 1 semestre
         print("Material B, 1 semestre")
         req_mat_b_1 = total_req_b_1sem
-        inv_final_b_1 = int(input("Ingrese inventario final: "))
+        inv_final_b_1 = float(input("Ingrese inventario final: "))
         total_materiales_b_1 = (req_mat_b_1 + inv_final_b_1)
         print(f"El total de materiales es de {total_materiales_b_1}")
-        inv_inicial_b_1 = int(input("Ingrese inventario inicial: "))
+        inv_inicial_b_1 = float(input("Ingrese inventario inicial: "))
         material_comprar_b_1 = (total_materiales_b_1 - inv_inicial_b_1)
         precio_compra_b_1 = float(input("Ingrese precio de compra: "))
         total_material_b_1_pesos = (material_comprar_b_1 * precio_compra_b_1)
@@ -445,10 +445,10 @@ while respuestaMenu != 13:
         #material b 2 semestre
         print("Material B, 2 semestre")
         req_mat_b_2 = total_req_b_2sem
-        inv_final_b_2 = int(input("Ingrese inventario final: "))
+        inv_final_b_2 = float(input("Ingrese inventario final: "))
         total_materiales_b_2 = (req_mat_b_2 + inv_final_b_2)
         print(f"El total de materiales es de {total_materiales_b_2}")
-        inv_inicial_b_2 = int(input("Ingrese inventario inicial: "))
+        inv_inicial_b_2 = float(input("Ingrese inventario inicial: "))
         material_comprar_b_2 = (total_materiales_b_2 - inv_inicial_b_2)
         precio_compra_b_2 = float(input("Ingrese precio de compra: "))
         total_material_b_2_pesos = (material_comprar_b_2 * precio_compra_b_2)
@@ -460,10 +460,10 @@ while respuestaMenu != 13:
         #material b total 2009
         print("Material A, Total 2009")
         req_mat_b_2009 = total_req_b_2009
-        inv_final_b_2009 = int(input("Ingrese inventario final: "))
+        inv_final_b_2009 = float(input("Ingrese inventario final: "))
         total_materiales_b_2009 = (req_mat_b_2009 + inv_final_b_2009)
         print(f"El total de materiales es de {total_materiales_b_2009}")
-        inv_inicial_b_2009 = int(input("Ingrese inventario inicial: "))
+        inv_inicial_b_2009 = float(input("Ingrese inventario inicial: "))
         material_comprar_b_2009 = (total_materiales_b_2009 - inv_inicial_b_2009)
         total_material_b_2009_pesos = (total_material_b_1_pesos + total_material_b_2_pesos)
         print(f"El Total de material B del 2009 en $ es: ${total_material_b_2009_pesos}")
@@ -474,10 +474,10 @@ while respuestaMenu != 13:
         #material c 1 semestre
         print("Material C, 1 semestre")
         req_mat_c_1 = total_req_c_1sem
-        inv_final_c_1 = int(input("Ingrese inventario final: "))
+        inv_final_c_1 = float(input("Ingrese inventario final: "))
         total_materiales_c_1 = (req_mat_c_1 + inv_final_c_1)
         print(f"El total de materiales es de {total_materiales_c_1}")
-        inv_inicial_c_1 = int(input("Ingrese inventario inicial: "))
+        inv_inicial_c_1 = float(input("Ingrese inventario inicial: "))
         material_comprar_c_1 = (total_materiales_c_1 - inv_inicial_c_1)
         precio_compra_c_1 = float(input("Ingrese precio de compra: "))
         total_material_c_1_pesos = (material_comprar_c_1 * precio_compra_c_1)
@@ -489,10 +489,10 @@ while respuestaMenu != 13:
         #material c 2 semestre
         print("Material C, 2 semestre")
         req_mat_c_2 = total_req_c_2sem
-        inv_final_c_2 = int(input("Ingrese inventario final: "))
+        inv_final_c_2 = float(input("Ingrese inventario final: "))
         total_materiales_c_2 = (req_mat_c_2 + inv_final_c_2)
         print(f"El total de materiales es de {total_materiales_c_2}")
-        inv_inicial_c_2 = int(input("Ingrese inventario inicial: "))
+        inv_inicial_c_2 = float(input("Ingrese inventario inicial: "))
         material_comprar_c_2 = (total_materiales_c_2 - inv_inicial_c_2)
         precio_compra_c_2 = float(input("Ingrese precio de compra: "))
         total_material_c_2_pesos = (material_comprar_c_2 * precio_compra_c_2)
@@ -504,10 +504,10 @@ while respuestaMenu != 13:
         #material c total 2009
         print("Material C, Total 2009")
         req_mat_c_2009 = total_req_c_2009
-        inv_final_c_2009 = int(input("Ingrese inventario final: "))
+        inv_final_c_2009 = float(input("Ingrese inventario final: "))
         total_materiales_c_2009 = (req_mat_c_2009 + inv_final_c_2009)
         print(f"El total de materiales es de {total_materiales_c_2009}")
-        inv_inicial_c_2009 = int(input("Ingrese inventario inicial: "))
+        inv_inicial_c_2009 = float(input("Ingrese inventario inicial: "))
         material_comprar_c_2009 = (total_materiales_c_2009 - inv_inicial_c_2009)
         total_material_c_2009_pesos = (total_material_c_1_pesos + total_material_c_2_pesos)
         print(f"El Total de material C del 2009 en $ es: ${total_material_c_2009_pesos}")
@@ -527,9 +527,23 @@ while respuestaMenu != 13:
 
 
     elif respuestaMenu == 6:
-        print('Seleccciono Determinacion del saldo de Proveedores y Flujo de Salidas ')
+        print('Selecccionó Determinacion del saldo de Proveedores y Flujo de Salidas ')
         print(' ')
+        saldo_proveedores_2008 = float(input("Ingrese el saldo de proveedores al 31-Dic-2008: "))
+        compras_2009 = compra_total_2009
+        total_proveedores_2009 = (saldo_proveedores_2008 + compras_2009)
+        print(f"El total de proveedores del 2009 es: {total_proveedores_2009}")
+    
+        print("\n SALIDAS DE EFECTIVO")
+        por_proveedores_2008 = saldo_proveedores_2008
+        por_proveedores_2009 = (compras_2009 * 0.6)
+        total_salidas_2009 = (por_proveedores_2008 + por_proveedores_2009)
+        print(f"El total de salidas del 2009 son: {total_salidas_2009}")
+        saldo_proveedores_2009 = (total_proveedores_2009 - total_salidas_2009)
+        print(f"El saldo de proveedores del 2009 es: {saldo_proveedores_2009}")
 
+        input("Presione enter para continuar...")
+        borrar()
 
     elif respuestaMenu == 7:
         print('Seleccciono Presupuesto de Mano de Obra  Directa')
