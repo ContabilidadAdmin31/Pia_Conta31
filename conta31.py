@@ -356,6 +356,28 @@ while respuestaMenu != 13:
 
         input("Presione enter para continuar...")
         borrar()
+
+        print("TOTAL DE REQUERIMIENTOS producto A (gramos)")
+        total_req_a_1sem = (totalma1 + totalma1di + totalma1z)
+        total_req_b_1sem = (totalmb1 + totalmb1di + totalmb1z)
+        total_req_c_1sem = (totalmc1 + totalmc1di + totalmc1z)
+        print("\nPRIMER SEMESTRE")
+        print(f"Material A: {total_req_a_1sem}\nMaterial B: {total_req_b_1sem}\nMaterial C: {total_req_c_1sem}")
+
+        total_req_a_2sem = (totalma2 + totalma2di + totalma2z)
+        total_req_b_2sem = (totalmb2 + totalmb2di + totalmb2z)
+        total_req_c_2sem = (totalmc2 + totalmc2di + totalmc2z)
+        print("\nSEGUNDO SEMESTRE")
+        print(f"Material A: {total_req_a_2sem}\nMaterial B: {total_req_b_2sem}\nMaterial C: {total_req_c_2sem}")
+
+        total_req_a_2009 = (totala2009d + totala2009di + totala2009z)
+        total_req_b_2009 = (totalb2009d + totalb2009di + totalb2009z)
+        total_req_c_2009 = (totalc2009d + totalc2009di + totalc2009z)
+        print("\nTOTAL 2009")
+        print(f"Material A: {total_req_a_2009}\nMaterial B: {total_req_b_2009}\nMaterial C: {total_req_c_2009}")
+
+        input("Presione enter para continuar...")
+        borrar()
         
     elif respuestaMenu == 5:
         print('Seleccciono Presupuesto de Compra de Materiales')
