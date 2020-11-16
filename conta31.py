@@ -196,7 +196,114 @@ while respuestaMenu != 13:
 
     elif respuestaMenu == 4:
         print('Seleccciono Presupuesto de Requerimento de Materiales ')
-        print(' ')
+        print('Seleccciono Presupuesto de Requerimento de Materiales ')
+        unidadesd=int(input("Ingrese las unidades a producir del primer semestre: "))
+        unidadesd2=int(input("Ingrese las unidades a producir del segundo semestre: "))
+        totalunidadesd= unidadesd+unidadesd2
+        #Material A Producto D
+        mad=int(input("ingrese el requerimiento de material del primer semestre: "))
+        mad2=int(input("ingrese el requerimiento de material del segundo semestre: "))
+        totalma1=  unidadesd*mad
+        print(f"El material requerido del primer semestre del producto D es de: {totalma1}")
+        totalma2= unidadesd2*mad2
+        print(f"El material requerido del segundo semestre del producto D es de: {totalma2}")
+        
+        #Material B Producto D
+        mbd=int(input("ingrese el requerimiento de material del primer semestre: "))
+        mbd2=int(input("ingrese el requerimiento de material del segundo semestre: "))
+        totalmb1=  unidadesd*mbd
+        print(f"El material requerido del primer semestre del producto D es de: {totalmb1}")
+        totalmb2= unidadesd2*mbd2
+        print(f"El material requerido del segundo semestre del producto D es de: {totalmb2}")
+        
+        #Material C Producto D
+        mcd=int(input("ingrese el requerimiento de material del primer semestre: "))
+        mcd2=int(input("ingrese el requerimiento de material del segundo semestre: "))
+        totalmc1=  unidadesd*mcd
+        print(f"El material requerido del primer semestre del producto D es de: {totalmc1}")
+        totalmc2= unidadesd2*mcd2
+        print(f"El material requerido del segundo semestre del producto D es de: {totalmc2}")
+        
+        totala2009d= totalunidadesd*mad
+        print(f"Total de material A requerido del producto D es de: {totala2009d}")
+        totalb2009d= totalunidadesd*mbd
+        print(f"Total de material B requerido del producto D es de: {totalb2009d}")
+        totalc2009d= totalunidadesd*mcd
+        print(f"Total de material C requerido del producto D es de: {totalc2009d}")
+        
+        #Producto Di
+        unidadesdi=int(input("Ingrese las unidades a producir del primer semestre: "))
+        unidadesdi2=int(input("Ingrese las unidades a producir del segundo semestre: "))
+        totalunidadesdi= unidadesdi+unidadesdi2
+        #Material A Producto Di
+        madi=int(input("ingrese el requerimiento de material del primer semestre: "))
+        madi2=int(input("ingrese el requerimiento de material del segundo semestre: "))
+        totalma1di=  unidadesdi*madi
+        print(f"El material requerido del primer semestre del producto Di es de: {totalma1di}")
+        totalma2di= unidadesdi2*madi2
+        print(f"El material requerido del segundo semestre del producto Di es de: {totalma2di}")
+        
+        #Material B Producto Di
+        mbdi=int(input("ingrese el requerimiento de material del primer semestre: "))
+        mbdi2=int(input("ingrese el requerimiento de material del segundo semestre: "))
+        totalmb1di=  unidadesdi*mbdi
+        print(f"El material requerido del primer semestre del producto Di es de: {totalmb1di}")
+        totalmb2di= unidadesdi2*mbdi2
+        print(f"El material requerido del segundo semestre del producto Di es de: {totalmb2di}")
+        
+        #Material C Producto Di
+        mcdi=int(input("ingrese el requerimiento de material del primer semestre: "))
+        mcdi2=int(input("ingrese el requerimiento de material del segundo semestre: "))
+        totalmc1di=  unidadesdi*mcdi
+        print(f"El material requerido del primer semestre del producto Di es de: {totalmc1di}")
+        totalmc2di= unidadesdi2*mcdi2
+        print(f"El material requerido del segundo semestre del producto Di es de: {totalmc2di}")
+        
+        totala2009di= totalunidadesdi*madi
+        print(f"Total de material A requerido del producto Di es de: {totala2009di}")
+        totalb2009di= totalunidadesdi*mbdi
+        print(f"Total de material B requerido del producto Di es de: {totalb2009di}")
+        totalc2009di= totalunidadesdi*mcdi
+        print(f"Total de material C requerido del producto Di es de: {totalc2009di}")
+        
+        #Producto Z
+        unidadesz=int(input("Ingrese las unidades a producir del primer semestre: "))
+        unidadesz2=int(input("Ingrese las unidades a producir del segundo semestre: "))
+        totalunidadesz= unidadesz+unidadesz2
+        #Material A Producto Z
+        maz=int(input("ingrese el requerimiento de material del primer semestre: "))
+        maz2=int(input("ingrese el requerimiento de material del segundo semestre: "))
+        totalma1z=  unidadesz*maz
+        print(f"El material requerido del primer semestre del producto Z es de: {totalma1z}")
+        totalma2z= unidadesz2*maz2
+        print(f"El material requerido del segundo semestre del producto Z es de: {totalma2z}")
+        
+        #Material B Producto Z
+        mbz=int(input("ingrese el requerimiento de material del primer semestre: "))
+        mbz2=int(input("ingrese el requerimiento de material del segundo semestre: "))
+        totalmb1z=  unidadesz*mbz
+        print(f"El material requerido del primer semestre del producto Z es de: {totalmb1z}")
+        totalmb2z= unidadesz2*mbz2
+        print(f"El material requerido del segundo semestre del producto Z es de: {totalmb2z}")
+        
+        #Material C Producto Z
+        mcz=int(input("ingrese el requerimiento de material del primer semestre: "))
+        mcz2=int(input("ingrese el requerimiento de material del segundo semestre: "))
+        totalmc1z=  unidadesz*mcz
+        print(f"El material requerido del primer semestre del producto Z es de: {totalmc1z}")
+        totalmc2z= unidadesz2*mcz2
+        print(f"El material requerido del segundo semestre del producto Z es de: {totalmc2z}")
+        
+        totala2009z= totalunidadesz*maz
+        print(f"Total de material A requerido del producto Z es de: {totala2009z}")
+        totalb2009z= totalunidadesz*mbz
+        print(f"Total de material B requerido del producto Z es de: {totalb2009z}")
+        totalc2009z= totalunidadesz*mcz
+        print(f"Total de material C requerido del producto Z es de: {totalc2009z}")
+        
+        
+
+
 
 
     elif respuestaMenu == 5:
