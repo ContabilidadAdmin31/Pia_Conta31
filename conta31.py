@@ -527,16 +527,7 @@ while respuestaMenu != 13:
 
 
     elif respuestaMenu == 6:
-        print('Seleccciono Determinacion del saldo de Proveedores y Flujo de Salidas ')
-        print('Seleccciono Determinacion del saldo de Proveedores y Flujo de Salidas ')
-        saldoprov=int(input("Ingresa el saldo de proveedores del 2008: "))
-        compras2009=compra_total_2009+saldoprov
-        print(f"El total de proveedores del 2009 es de: {compras2009}")
-        por_proveedores_2009=compra_total_2009*0.6
-        salidas_2009=saldoprov+por_proveedores_2009
-        print(f"El total de salidas del 2009 es de: {salidas_2009}")
-        saldo_prov2009= compras2009-salidas_2009
-        print(f"El saldo de proveedores del 2009 es de: {saldo_prov2009}")
+       
 
 
     elif respuestaMenu == 7:
