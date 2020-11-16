@@ -33,7 +33,7 @@ while respuestaMenu != 13:
         print(f"El importe de venta del segundo semestre es de: {importe2sem}")
         totald_2009.append(importe2sem)
         total=sum(totald_2009)
-        print(f"El importe total del 2009 es de {total}")
+        print(f"El importe total del 2009 del producto D es de {total}")
 
     elif respuestaMenu == 2:
         print('Seleccciono la Determinación del saldo de Clientes y Flujo de Entradas ')
