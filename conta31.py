@@ -6,7 +6,9 @@ def borrar():
   else:
     system("clear")
 
-
+costo_unitariod=[]
+costo_unitariodi=[]
+costo_unitarioz=[]
 respuestaMenu = 0
 
 
