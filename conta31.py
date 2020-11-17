@@ -687,7 +687,7 @@ while respuestaMenu != 13:
         print(f"El total de presupuesto de comisiones es: {presupuesto_comisiones_total}")
         presupuesto_varios_total = (presupuesto_varios_1 + presupuesto_varios_2)
         print(f"El total de presupuesto de varios es: {presupuesto_varios_total}")
-        prespuesto_intereses_total = (prespuesto_intereses_1 + prespuesto_intereses_2)
+        presupuesto_intereses_total = (prespuesto_intereses_1 + prespuesto_intereses_2)
         print(f"El total de presupuesto de intereses por obligación es: {presupuesto_intereses_total}")
         gastos_operacion_total = (presupuesto_depreciacion_total + presupuesto_sueldos_total + presupuesto_comisiones_total + presupuesto_varios_total + presupuesto_intereses_total)
         print(f"El total de gastos de operación del año 2009 es: {gastos_operacion_total}")        
