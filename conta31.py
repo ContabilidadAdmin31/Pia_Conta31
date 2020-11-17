@@ -549,12 +549,12 @@ while respuestaMenu != 13:
 
     elif respuestaMenu == 7:
        
-        print('Seleccciono Presupuesto de Mano de Obra  Directa')
+        print('Selecccionó Presupuesto de Mano de Obra  Directa')
         #Producto D
         hrsd1=int(input("Ingresa las horas requeridas por unidad durante el primer semestre del producto D: "))
-        totalhrs1d=unidadesd*hrsd1
+        totalhrs1d=unidades_a_producir_d_1sem*hrsd1
         hrsd2=int(input("Ingresa las horas requeridas por unidad durante el segundo semestre del producto D: "))
-        totalhrs2d=unidadesd2*hrsd2
+        totalhrs2d=unidades_a_producir_d_2sem*hrsd2
         hrsd_2009=totalhrs1d+totalhrs2d
         cuotad1=int(input("Ingrese la cuota por hora del primer semestre del producto D: "))
         cuotad2=int(input("Ingrese la cuota por hora del segundo semestre del producto D: "))
@@ -564,12 +564,15 @@ while respuestaMenu != 13:
         print(f"El total de horas del primer semestre fue de: {totalhrs1d}\nEn el segundo semestre el total de horas fue de: {totalhrs2d}\nLas horas trabajadas en el 2009 fueron: {hrsd_2009} horas")
         print(f"El importe de M.O.D del producto D en el primer semestre fue de: {importe1d}\nEl importe de M.O.D del producto D en el segundo semestre fue de: {importe2d}\nY el total de importe durante el 2009 fue de: {imported}")
 
+        input("Presione enter para continuar...")
+        borrar()
+        
         #Producto Di
         
         hrsdi1=int(input("Ingresa las horas requeridas por unidad durante el primer semestre del producto Di: "))
-        totalhrs1di=unidadesdi*hrsdi1
+        totalhrs1di=unidades_a_producir_di_1sem*hrsdi1
         hrsdi2=int(input("Ingresa las horas requeridas por unidad durante el segundo semestre del producto Di: "))
-        totalhrs2di=unidadesdi2*hrsdi2
+        totalhrs2di=unidades_a_producir_di_2sem*hrsdi2
         hrsdi_2009=totalhrs1di+totalhrs2di
         cuotadi1=int(input("Ingrese la cuota por hora del primer semestre del producto Di: "))
         cuotadi2=int(input("Ingrese la cuota por hora del segundo semestre del producto Di: "))
@@ -579,12 +582,15 @@ while respuestaMenu != 13:
         print(f"El total de horas del primer semestre fue de: {totalhrs1di}\nEn el segundo semestre el total de horas fue de: {totalhrs2di}\nLas horas trabajadas en el 2009 fueron: {hrsdi_2009} horas")
         print(f"El importe de M.O.D del producto Di en el primer semestre fue de: {importe1di}\nEl importe de M.O.D del producto Di en el segundo semestre fue de: {importe2di}\nY el total de importe durante el 2009 fue de: {importedi}")
         
+        input("Presione enter para continuar...")
+        borrar()
+
         #Producto Z
         
         hrsz1=int(input("Ingresa las horas requeridas por unidad durante el primer semestre del producto Z: "))
-        totalhrs1z=unidadesz*hrsz1
+        totalhrs1z=unidades_a_producir_z_1sem*hrsz1
         hrsz2=int(input("Ingresa las horas requeridas por unidad durante el segundo semestre del producto Z: "))
-        totalhrs2z=unidadesz2*hrsz2
+        totalhrs2z=unidades_a_producir_z_2sem*hrsz2
         hrsz_2009=totalhrs1z+totalhrs2z
         cuota1z=int(input("Ingrese la cuota por hora del primer semestre del producto Z: "))
         cuota2z=int(input("Ingrese la cuota por hora del segundo semestre del producto Z: "))
@@ -594,6 +600,9 @@ while respuestaMenu != 13:
         print(f"El total de horas del primer semestre fue de: {totalhrs1z}\nEn el segundo semestre el total de horas fue de: {totalhrs2z}\nLas horas trabajadas en el 2009 fueron: {hrsz_2009} horas")
         print(f"El importe de M.O.D del producto Z en el primer semestre fue de: {importe1z}\nEl importe de M.O.D del producto Z en el segundo semestre fue de: {importe2z}\nY el total de importe durante el 2009 fue de: {importez}")
         
+        input("Presione enter para continuar...")
+        borrar()
+
         #Totales
         totalhrs1= totalhrs1d + totalhrs1di + totalhrs1z
         totalhrs2= totalhrs2d + totalhrs2di + totalhrs2z
@@ -604,11 +613,45 @@ while respuestaMenu != 13:
         total_importe2009= total_importe1 + total_importe2
         print(f"El importe total de M.O.D durante el primer semestre fue de: {total_importe1}\nEl importe total de M.O.D durante el segundo semestre fue se: {total_importe2}\nEl importe de M.O.D del 2009 fue de: {total_importe2009}")
         
+        input("Presione enter para continuar...")
+        borrar()
 
 
     elif respuestaMenu == 8:
-        print('Seleccciono Presupuesto de Gastos Indirectos de Fabricación ')
+        print('Selecccionó Presupuesto de Gastos Indirectos de Fabricación ')
         print(' ')
+        depreciacion_1 = float(input("Ingrese la depreciación del 1 semestre: "))
+        seguros_1 = float(input("Ingrese la cantidad por concepto de seguros: "))
+        mantenimiento_1 = float(input("Ingrese la cantidad por concepto de mantenimiento: "))
+        energeticos_1 = float(input("Ingrese la cantidad por concepto de energéticos: "))
+        varios_1 = float(input("Ingrese la cantidad por concepto de varios: "))
+        suma_gif1 = (depreciacion_1 + seguros_1 + mantenimiento_1 + energeticos_1 + varios_1)
+        print(f"El total GIF del 1 semestre es: {suma_gif1}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        depreciacion_2 = float(input("Ingrese la depreciación del 2 semestre: "))
+        seguros_2 = float(input("Ingrese la cantidad por concepto de seguros: "))
+        mantenimiento_2 = float(input("Ingrese la cantidad por concepto de mantenimiento: "))
+        energeticos_2 = float(input("Ingrese la cantidad por concepto de energéticos: "))
+        varios_2 = float(input("Ingrese la cantidad por concepto de varios: "))
+        suma_gif2 = (depreciacion_2 + seguros_2 + mantenimiento_2 + energeticos_2 + varios_2)
+        print(f"El total GIF del 1 semestre es: {suma_gif2}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        depreciacion_total = (depreciacion_1 + depreciacion_2)
+        seguros_total = (seguros_1 + seguros_2)
+        mantenimiento_total = (mantenimiento_1 + mantenimiento_2)
+        energeticos_total = (energeticos_1 + energeticos_2)
+        varios_total = (varios_1 + varios_2)
+        suma_gif_total = (depreciacion_total + seguros_total + mantenimiento_total + energeticos_total + varios_total)
+        print(f"El total GIF del año 2009 es: {suma_gif_total}")
+
+        input("Presione enter para continuar...")
+        borrar()
 
 
     elif respuestaMenu == 9:
