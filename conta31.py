@@ -616,7 +616,74 @@ while respuestaMenu != 13:
 
     elif respuestaMenu == 10:
         print('Seleccciono Determinación de Costo Unitario de Productos Terminados')
-        print(' ')
+          #Producto D
+        costo_ad=float(input("Ingresa el costo del material A del producto D: "))
+        cantidad_a=int(input("Ingresa el numero de unidades del material A del producto D: "))
+        costo_unitariod.append((costo_ad*cantidad_a))
+        
+        costo_bd=float(input("Ingresa el costo del material B del producto D: "))
+        cantidad_b=int(input("Ingresa el numero de unidades del material B del producto D: "))
+        costo_unitariod.append((costo_bd*cantidad_b))
+        
+        costo_cd=float(input("Ingresa el costo del material C del producto D: "))
+        cantidad_c=int(input("Ingresa el numero de unidades del material C del producto D: "))
+        costo_unitariod.append((costo_cd*cantidad_c))
+        
+        mano_obra_d=float(input("Ingresa el costo de la mano de obra para el producto D: "))
+        cantidad_mo_d=int(input("Ingresa la cantidad de mano de obra a utilizar: "))
+        costo_unitariod.append((mano_obra_d*cantidad_mo_d))
+        
+        gif_d=float(input("Ingresa el costo de los gastos indirectos de fabricación del producto D: "))
+        cantidad_gif_d=int(input("Ingresa la cantidad de gastos indirectos del producto D: "))
+        costo_unitariod.append((gif_d*cantidad_gif_d))
+        costo_unitario_d=sum(costo_unitariod)
+        print(f"El costo unitario del producto D es de: {costo_unitario_d}")
+        
+         #Producto Di
+        costo_adi=float(input("Ingresa el costo del material A del producto Di: "))
+        cantidad_adi=int(input("Ingresa el numero de unidades del material A del producto Di: "))
+        costo_unitariodi.append((costo_adi*cantidad_adi))
+        
+        costo_bdi=float(input("Ingresa el costo del material B del producto Di: "))
+        cantidad_bdi=int(input("Ingresa el numero de unidades del material B del producto Di: "))
+        costo_unitariodi.append((costo_bdi*cantidad_bdi))
+        
+        costo_cdi=float(input("Ingresa el costo del material C del producto Di: "))
+        cantidad_cdi=int(input("Ingresa el numero de unidades del material C del producto Di: "))
+        costo_unitariodi.append((costo_cdi*cantidad_cdi))
+        
+        mano_obra_di=float(input("Ingresa el costo de la mano de obra para el producto Di: "))
+        cantidad_mo_di=int(input("Ingresa la cantidad de mano de obra a utilizar: "))
+        costo_unitariodi.append((mano_obra_di*cantidad_mo_di))
+        
+        gif_di=float(input("Ingresa el costo de los gastos indirectos de fabricación del producto Di: "))
+        cantidad_gif_di=int(input("Ingresa la cantidad de gastos indirectos del producto Di: "))
+        costo_unitariodi.append((gif_di*cantidad_gif_di))
+        costo_unitario_di=sum(costo_unitariodi)
+        print(f"El costo unitario del producto Di es de: {costo_unitario_di}")
+        
+         #Producto Z
+        costo_az=float(input("Ingresa el costo del material A del producto Z: "))
+        cantidad_az=int(input("Ingresa el numero de unidades del material A del producto Z: "))
+        costo_unitarioz.append((costo_az*cantidad_az))
+        
+        costo_bz=float(input("Ingresa el costo del material B del producto Z: "))
+        cantidad_bz=int(input("Ingresa el numero de unidades del material B del producto Z: "))
+        costo_unitarioz.append((costo_bz*cantidad_bz))
+        
+        costo_cz=float(input("Ingresa el costo del material C del producto Z: "))
+        cantidad_cz=int(input("Ingresa el numero de unidades del material C del producto Z: "))
+        costo_unitarioz.append((costo_cz*cantidad_cz))
+        
+        mano_obra_z=float(input("Ingresa el costo de la mano de obra para el producto Z: "))
+        cantidad_mo_z=int(input("Ingresa la cantidad de mano de obra a utilizar: "))
+        costo_unitarioz.append((mano_obra_z*cantidad_mo_z))
+        
+        gif_z=float(input("Ingresa el costo de los gastos indirectos de fabricación del producto Z: "))
+        cantidad_gif_z=int(input("Ingresa la cantidad de gastos indirectos del producto Z: "))
+        costo_unitarioz.append((gif_z*cantidad_gif_z))
+        costo_unitario_z=sum(costo_unitarioz)
+        print(f"El costo unitario del producto Z es de: {costo_unitario_z}")
 
 
     elif respuestaMenu == 11:
