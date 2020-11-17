@@ -655,9 +655,45 @@ while respuestaMenu != 13:
 
 
     elif respuestaMenu == 9:
-        print('Seleccciono Presupuesto de Gastos de Operación ')
+        print('Selecccionó Presupuesto de Gastos de Operación ')
         print(' ')
+        presupuesto_depreciacion_1 = float(input("Ingrese el presupuesto de depreciación del 1 semestre: "))
+        presupuesto_sueldos_1 = float(input("Ingrese el presupuesto de sueldos y salarios del 1 semestre: "))
+        presupuesto_comisiones_1 = ((importe1sem_d + importe1sem_di + importe1sem_z) * 0.05)
+        presupuesto_varios_1 = float(input("Ingrese el presupuesto de varios del 1 semestre: "))
+        prespuesto_intereses_1 = float(input("Ingrese el presupuesto de intereses por obligaciones del 1 semestre: "))
+        gastos_operacion_1 = (presupuesto_depreciacion_1 + presupuesto_sueldos_1 + presupuesto_comisiones_1 + presupuesto_varios_1 + prespuesto_intereses_1)
+        print(f"El total de gastos de operación del 1 semestre es: {gastos_operacion_1}")
 
+        input("Presione enter para continuar...")
+        borrar()
+
+        presupuesto_depreciacion_2 = float(input("Ingrese el presupuesto de depreciación del 2 semestre: "))
+        presupuesto_sueldos_2 = float(input("Ingrese el presupuesto de sueldos y salarios del 2 semestre: "))
+        presupuesto_comisiones_2 = ((importe2sem_d + importe2sem_di + importe2sem_z) * 0.05)
+        presupuesto_varios_2 = float(input("Ingrese el presupuesto de varios del 2 semestre: "))
+        prespuesto_intereses_2 = float(input("Ingrese el presupuesto de intereses por obligaciones del 2 semestre: "))
+        gastos_operacion_2 = (presupuesto_depreciacion_2 + presupuesto_sueldos_2 + presupuesto_comisiones_2 + presupuesto_varios_2 + prespuesto_intereses_2)
+        print(f"El total de gastos de operación del 2 semestre es: {gastos_operacion_2}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        presupuesto_depreciacion_total = (presupuesto_depreciacion_1 + presupuesto_depreciacion_2)
+        print(f"El total de presupuesto de depreciación es: {presupuesto_depreciacion_total}")
+        presupuesto_sueldos_total = (presupuesto_sueldos_1 + presupuesto_sueldos_2)
+        print(f"El total de presupuesto de sueldos y salarios es: {presupuesto_sueldos_total}")
+        presupuesto_comisiones_total = (presupuesto_comisiones_1 + presupuesto_comisiones_2)
+        print(f"El total de presupuesto de comisiones es: {presupuesto_comisiones_total}")
+        presupuesto_varios_total = (presupuesto_varios_1 + presupuesto_varios_2)
+        print(f"El total de presupuesto de varios es: {presupuesto_varios_total}")
+        prespuesto_intereses_total = (prespuesto_intereses_1 + prespuesto_intereses_2)
+        print(f"El total de presupuesto de intereses por obligación es: {presupuesto_intereses_total}")
+        gastos_operacion_total = (presupuesto_depreciacion_total + presupuesto_sueldos_total + presupuesto_comisiones_total + presupuesto_varios_total + presupuesto_intereses_total)
+        print(f"El total de gastos de operación del año 2009 es: {gastos_operacion_total}")        
+
+        input("Presione enter para continuar...")
+        borrar()
 
     elif respuestaMenu == 10:
         print('Seleccciono Determinación de Costo Unitario de Productos Terminados')
