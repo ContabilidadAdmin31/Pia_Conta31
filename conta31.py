@@ -821,6 +821,9 @@ while respuestaMenu != 13:
         costo_ventas = (produccion_disponible - inventario_final_producto_terminado)
         print(f"Material Disponible: {material_disponible}\nMateriales Utilizados: {materiales_utilizados}\nCosto de Produccion: {costo_produccion}\nTotal de Produccion Disponible: {produccion_disponible}\nCosto de Ventas: {costo_ventas}")
         
+        input("Presione enter para continuar...")
+        borrar()
+
         #Estado de resultados
         utilidad_bruta = (ventas_2009 - costo_ventas)
         utilidad_operacion = (utilidad_bruta - gastos_operacion_total)
@@ -828,6 +831,9 @@ while respuestaMenu != 13:
         ptu = (utilidad_operacion*0.1)
         utilidad_neta= (utilidad_operacion - isr - ptu)
         print(f"Utilidad Bruta: {utilidad_bruta}\nUtilidad de operacion: {utilidad_operacion}\nISR: {isr}\nPTU: {ptu}\nUtilidad Neta: {utilidad_neta}")
+        
+        input("Presione enter para continuar...")
+        borrar()
         
         #Estado de flujo de efectivo
         saldo_inicial_efectivo= input("Ingresa el saldo inicial efectivo: ")
@@ -841,5 +847,61 @@ while respuestaMenu != 13:
         flujo_efectivo_anual= (efectivo_disponible - total_salidas)
         print(f"Total de entradas: {total_entradas}\nEfectivo Disponible: {efectivo_disponible}\nTotal de salidas: {total_salidas}\nFlujo de Efectivo Anual: {flujo_efectivo_anual}") 
 
+        input("Presione enter para continuar...")
+        borrar()
+
+        #Balance general
+        #Activo
+        efectivo = flujo_efectivo_anual
+        clientes = saldo_clientes_2009
+        inventario_materiales = inventario_final_materiales
+        inventario_producto_terminado = inventario_final_producto_terminado
+        total_activos_circulantes = (efectivo + clientes + inventario_materiales + inventario_producto_terminado)
+        print(f"El Total de activos circulantes es: {total_activos_circulantes}")
+
+        #No circulante
+        terreno = float(input("Digite el importe de terrenos: "))
+        planta_y_equipo = float(input("Digite el importe de planta y equipo: "))
+        suma_planta_y_equipo = (planta_y_equipo + compra_activo_fijo)
+        depreciacion_acumulada = float(input("Ingrese el importe de depreciación acumulada: "))
+        suma_depreciacion_acumulada = (depreciacion_acumulada + presupuesto_depreciacion_total + depreciacion_total)
+        total_activos_nocirculantes = (terreno + suma_planta_y_equipo + suma_depreciacion_acumulada)
+        print(f"El Total de activos NO circulantes es: {total_activos_nocirculantes}")
+
+        suma_total_activos = (total_activos_circulantes + total_activos_nocirculantes)
+        print(f"El Total de activos es: {suma_total_activos}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #Pasivo
+        #Corto plazo
+        proveedores = saldo_proveedores_2009
+        docs_por_pagar = float(input("Ingrese el importe de documentos por pagar: "))
+        pasivo_corto_plazo = (proveedores + docs_por_pagar + ptu)
+        print(f"El Total de pasivos corto plazo es: {pasivo_corto_plazo}")
+
+        #Largo plazo
+        obligaciones_por_pagar = float(input("Ingrese el importe de obligaciones por pagar: "))
+        pasivo_largo_plazo = obligaciones_por_pagar
+
+        suma_total_pasivos = (pasivo_corto_plazo + pasivo_largo_plazo)
+        print(f"El Total de pasivos es: {suma_total_pasivos}")
+
+        input("Presione enter para continuar...")
+        borrar()
+
+        #Capital contable
+        capital_aportado = float(input("Ingrese el importe de capital aportado: "))
+        capital_ganado = float(input("Ingrese el importe de capital ganado: "))
+        utilidad_del_ejercicio = utilidad_neta
+        total_capital_contable = (capital_aportado + capital_ganado + utilidad_del_ejercicio)
+        print(f"El Total de capital contable es: {total_capital_contable}")
+
+        suma_pasivo_capital = (suma_total_pasivos + total_capital_contable)
+        print(f"La suma total de pasivo y capital es de: {suma_pasivo_capital}")
+
+        input("Presione enter para continuar...")
+        borrar()
 
 print('Adiós ')
