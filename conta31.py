@@ -809,6 +809,37 @@ while respuestaMenu != 13:
 
     elif respuestaMenu == 12:
         print('Seleccciono Presupuesto Financiero ')
-        print(' ')
-    
+        
+        
+        #Estado de Costo de Producción y Ventas
+        saldo_inicial_m=input("Ingresa el saldo inicial de los materiales: ")
+        material_disponible = (saldo_inicial_m + compra_total_2009)
+        materiales_utilizados= (material_disponible - inventario_final_materiales)
+        costo_produccion= (total_importe2009 + materiales_utilizados + suma_gif_total)
+        inventario_inicial_pt=input("Ingresa el monto del inventario inicial de productos terminados: ")
+        produccion_disponible= (costo_produccion + inventario_inicial_pt)
+        costo_ventas = (produccion_disponible - inventario_final_producto_terminado)
+        print(f"Material Disponible: {material_disponible}\nMateriales Utilizados: {materiales_utilizados}\nCosto de Produccion: {costo_produccion}\nTotal de Produccion Disponible: {produccion_disponible}\nCosto de Ventas: {costo_ventas}")
+        
+        #Estado de resultados
+        utilidad_bruta = (ventas_2009 - costo_ventas)
+        utilidad_operacion = (utilidad_bruta - gastos_operacion_total)
+        isr = (utilidad_operacion*0.3)
+        ptu = (utilidad_operacion*0.1)
+        utilidad_neta= (utilidad_operacion - isr - ptu)
+        print(f"Utilidad Bruta: {utilidad_bruta}\nUtilidad de operacion: {utilidad_operacion}\nISR: {isr}\nPTU: {ptu}\nUtilidad Neta: {utilidad_neta}")
+        
+        #Estado de flujo de efectivo
+        saldo_inicial_efectivo= input("Ingresa el saldo inicial efectivo: ")
+        total_entradas= (por_cobranza_2009 + por_cobranza_2008)
+        efectivo_disponible= (saldo_inicial_efectivo + total_entradas)
+        compra_activo_fijo=input("Ingresa el monto de la compra de activo fijo: ")
+        pago_isr_2008=input("Ingresa el pago de ISR del año 2008")
+        pago_gif=(suma_gif_total - depreciacion_total)
+        pago_gastos_operacion= (gastos_operacion_total - presupuesto_depreciacion_total)
+        total_salidas= (compra_activo_fijo + pago_isr_2008 + por_proveedores_2009 + por_proveedores_2008 + total_importe2009 + pago_gif + pago_gastos_operacion + isr)
+        flujo_efectivo_anual= (efectivo_disponible - total_salidas)
+        print(f"Total de entradas: {total_entradas}\nEfectivo Disponible: {efectivo_disponible}\nTotal de salidas: {total_salidas}\nFlujo de Efectivo Anual: {flujo_efectivo_anual}") 
+
+
 print('Adiós ')
